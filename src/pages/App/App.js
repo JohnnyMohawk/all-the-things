@@ -4,7 +4,9 @@ import './App.css';
 import ManliestThings from '../ManliestThings/ManliestThings'
 import FunctionalThings from '../FunctionalThings/FunctionalThings'
 import StyledThings from '../StyledThings/StyledThings'
+import CuteThings from '../CuteThings/CuteThings'
 import ScrumThings from '../ScrumThings/ScrumThings'
+
 
 class App extends Component {
   state = { 
@@ -73,12 +75,22 @@ class App extends Component {
         image: "https://i.imgur.com/gRxOxsA.jpg", 
         attributes: ["makes you live a long time", "consistent poops", "probably tacos sometimes!", "farm to market"], 
       },
+
+    ],
+    shusThings: [
+      {
+        name: "github manager",
+        image: "https://imgs.xkcd.com/comics/functional.png",  
+        attributes: ["efficient", "not a taco"],
+      }
+
     ], 
     iansThings: [
       {
         name: "scrum manager",
         image: "https://ca.slack-edge.com/T0351JZQ0-U0226TRREEA-f174e17c2869-512",  
         attributes: ["efficient", "kanban", "definition-of-done", "user stories"],
+
       },
     ],
   } 
@@ -92,6 +104,7 @@ class App extends Component {
             <Link to="/the-manliest-things">Ben's Things</Link><br/>
             <Link to="/the-functional-things">Shahzad's Things</Link><br/>
             <Link to="/the-well-styled-things">David's Things</Link><br/>
+            <Link to="/the-cute-things">Shu's Things</Link><br/>
           </>
         </Route>
         {/* All the <Route> components should live here */}
@@ -104,8 +117,13 @@ class App extends Component {
         <Route exact path='/the-well-styled-things'>
           <StyledThings things={this.state.davidsThings} />
         </Route>
+
+        <Route exact path='/the-cute-things'>
+          <CuteThings things={this.state.shusThings} />
+        </Route>
         <Route exact path='/the-scrum-things'>
           <ScrumThings things={this.state.iansThings} />
+
         </Route>
       </>
       
