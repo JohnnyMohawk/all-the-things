@@ -4,6 +4,7 @@ import './App.css';
 import ManliestThings from '../ManliestThings/ManliestThings'
 import FunctionalThings from '../FunctionalThings/FunctionalThings'
 import StyledThings from '../StyledThings/StyledThings'
+import ScrumThings from '../ScrumThings/ScrumThings'
 
 class App extends Component {
   state = { 
@@ -102,6 +103,9 @@ class App extends Component {
         </Route>
         <Route exact path='/the-well-styled-things'>
           <StyledThings things={this.state.davidsThings} />
+        </Route>
+        <Route exact path='/the-scrum-things'>
+          <ScrumThings things={this.state.iansThings} />
         </Route>
       </>
       
