@@ -104,7 +104,7 @@ class App extends Component {
         <Route exact path='/the-well-styled-things'>
           <StyledThings things={this.state.davidsThings} />
         </Route>
-        <Route exact path='/the-well-styled-things'>
+        <Route exact path='/the-scrum-things'>
           <ScrumThings things={this.state.iansThings} />
         </Route>
       </>
