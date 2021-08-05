@@ -72,6 +72,13 @@ class App extends Component {
         image: "https://i.imgur.com/gRxOxsA.jpg", 
         attributes: ["makes you live a long time", "consistent poops", "probably tacos sometimes!", "farm to market"], 
       },
+    ],
+    johnsThings: [
+      {
+        name: "database manager",
+        image: "https://i.imgur.com/UqCL4t8.png",  
+        attributes: ["efficient", "reusability", "boom", "hope this works"],
+      },
     ] 
   } 
   render() {
@@ -101,6 +108,6 @@ class App extends Component {
     );
   }
 }
- 
+
 export default App;
 
