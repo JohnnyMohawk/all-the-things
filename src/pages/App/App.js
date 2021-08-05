@@ -72,7 +72,14 @@ class App extends Component {
         image: "https://i.imgur.com/gRxOxsA.jpg", 
         attributes: ["makes you live a long time", "consistent poops", "probably tacos sometimes!", "farm to market"], 
       },
-    ] 
+    ],
+    shusThings: [
+      {
+        name: "github manager",
+        image: "https://imgs.xkcd.com/comics/functional.png",  
+        attributes: ["efficient", "not a taco"],
+      },
+    ],
   } 
   render() {
     return (
