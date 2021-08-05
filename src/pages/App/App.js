@@ -72,7 +72,14 @@ class App extends Component {
         image: "https://i.imgur.com/gRxOxsA.jpg", 
         attributes: ["makes you live a long time", "consistent poops", "probably tacos sometimes!", "farm to market"], 
       },
-    ] 
+    ], 
+    iansThings: [
+      {
+        name: "scrum manager",
+        image: "https://ca.slack-edge.com/T0351JZQ0-U0226TRREEA-f174e17c2869-512",  
+        attributes: ["efficient", "kanban", "definition-of-done", "user stories"],
+      },
+    ],
   } 
   render() {
     return (
