@@ -6,7 +6,7 @@ import FunctionalThings from '../FunctionalThings/FunctionalThings'
 import StyledThings from '../StyledThings/StyledThings'
 import CuteThings from '../CuteThings/CuteThings'
 import ScrumThings from '../ScrumThings/ScrumThings'
-
+import DopeThings from '../DopeThings/DopeThings'
 
 class App extends Component {
   state = { 
@@ -111,6 +111,7 @@ class App extends Component {
             <Link to="/the-functional-things">Shahzad's Things</Link><br/>
             <Link to="/the-well-styled-things">David's Things</Link><br/>
             <Link to="/the-cute-things">Shu's Things</Link><br/>
+            <Link to="/the-dope-things">John's Things</Link><br/>
           </>
         </Route>
         {/* All the <Route> components should live here */}
@@ -129,6 +130,10 @@ class App extends Component {
         </Route>
         <Route exact path='/the-scrum-things'>
           <ScrumThings things={this.state.iansThings} />
+
+        </Route>
+        <Route exact path='/the-dope-things'>
+          <DopeThings things={this.state.johnsThings} />
 
         </Route>
       </>
